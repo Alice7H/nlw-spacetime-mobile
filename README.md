@@ -61,3 +61,13 @@ No dispositivo móvel, o WebBrowser vai ser aberto ao invés de uma página de r
 Como a aplicação mobile não possui cookies, usamos o secure store com o comando `npx expo install expo-secure-store`.
 
 Na [documentação](https://expo.github.io/router/docs/), está escrito para usar o comando `npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar react-native-gesture-handler` para usar as rotas.
+
+## Aula 4 - Rotas e Nova memória
+
+- Definindo layout das rotas
+- Personalizando rota inicial do app
+- Página de nova memória
+
+O componente `Slot` do expo-router renderizará as rotas filhas, mas como teremos outras páginas, usamos o componente `Stack` para fazer a parte de navegação de rotas em 'pilha'.
+
+O react native possui o hook `useSafeAreaInsets` que fornece informações de inserção de área segura do dispositivo, assim podemos posicionar os elementos de interface adequadamente.

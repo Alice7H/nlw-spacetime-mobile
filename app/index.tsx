@@ -1,23 +1,11 @@
-import { StatusBar } from 'expo-status-bar'
 import { useEffect } from 'react'
 import { View, Text, TouchableOpacity, ImageBackground } from 'react-native'
 import { makeRedirectUri, useAuthRequest } from 'expo-auth-session'
 import * as SecureStore from 'expo-secure-store'
 import { api } from '../src/lib/api'
 import { useRouter } from 'expo-router'
-
-import {
-  useFonts,
-  Roboto_400Regular,
-  Roboto_700Bold
-} from '@expo-google-fonts/roboto'
-import { BaiJamjuree_700Bold } from '@expo-google-fonts/bai-jamjuree'
-import { styled } from 'nativewind'
-import blurBg from '../src/assets/bg-blur.png'
-import Stripes from '../src/assets/stripes.svg'
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
 
-const StyledStripes = styled(Stripes)
 
 // Endpoint
 const discovery = {
@@ -55,24 +43,8 @@ export default function App() {
     }
   }, [response]);
 
-  const [hasLoadedFonts] = useFonts({
-    Roboto_400Regular,
-    Roboto_700Bold,
-    BaiJamjuree_700Bold
-  });
-
-  if (!hasLoadedFonts) {
-    return null;
-  }
-
   return (
-    <ImageBackground
-      source={blurBg}
-      className='bg-gray-950 flex-1 items-center relative px-8 py-10'
-      imageStyle={{position: 'absolute', left: '-100%',}}
-    >
-      <StyledStripes className='absolute left-2' />
-
+    <View className='flex-1 items-center px-8 py-10' >
       <View className='flex-1 items-center justify-center gap-6'>
         <NLWLogo />
         <View className='space-y-2'>
@@ -97,7 +69,6 @@ export default function App() {
         Feito com 💜 no NLW da Rocketseat
       </Text>
 
-      <StatusBar style='light' translucent />
-    </ImageBackground>
+    </View>
   );
 };
