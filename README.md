@@ -17,7 +17,7 @@ E, como estamos usamos o typescript, ao invés de criar um arquivo app.d.ts refe
 Assim como no servidor e na parte web, utilizamos as configurações de análise de código da Rocketseat, e o plugin prettier tailwind com os comandos:`npm i @rocketseat/eslint-config -D` e
 `npm i prettier-plugin-tailwindcss -D`, respectivamente.
 
-## Aula 2
+## Aula 2 - Layout
 
 - Configurações de fontes
 - Blur background
@@ -43,3 +43,21 @@ instalamos o `react-native-svg` e do `react-native-svg-transformer` (referenciad
 Configuramos o empacotador Metro de acordo com a versão para Expo através do arquivo `metro.config.js`.
 
 E com estamos usando o Typescript, precisamos referenciá-lo, descrito no [React Native SVG transformer](https://github.com/kristerkari/react-native-svg-transformer).
+
+## Aula 3 - Autenticação
+
+- Instalação do `expo-auth-session`
+- Configuração Github OAuth (Expo)
+- Obtendo Github `code` mobile
+- Salvando token no secure store
+- Navegando usuário
+- Utilizando Expo Router
+- Personalizando rota inicial do app
+
+Seguimos a documentação para a instalação do expo auth session com o comando `npx expo install expo-auth-session expo-crypto`
+
+No dispositivo móvel, o WebBrowser vai ser aberto ao invés de uma página de redirecionamento ao Login do Github. `npx expo install expo-web-browser`
+
+Como a aplicação mobile não possui cookies, usamos o secure store com o comando `npx expo install expo-secure-store`.
+
+Na [documentação](https://expo.github.io/router/docs/), está escrito para usar o comando `npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar react-native-gesture-handler` para usar as rotas.
