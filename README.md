@@ -71,3 +71,14 @@ Na [documentação](https://expo.github.io/router/docs/), está escrito para usa
 O componente `Slot` do expo-router renderizará as rotas filhas, mas como teremos outras páginas, usamos o componente `Stack` para fazer a parte de navegação de rotas em 'pilha'.
 
 O react native possui o hook `useSafeAreaInsets` que fornece informações de inserção de área segura do dispositivo, assim podemos posicionar os elementos de interface adequadamente.
+
+## Aula 5 - Criação e listagem
+
+- Selecionando imagem da galeria
+- Preview da imagem
+- Criando nova memória
+- Layout da listagem
+- Botão de logout
+- Buscando memórias da API
+
+Instalamos o expo-image-picker para acessar imagens da galeria ou as fotos da câmera para isso executamos o `npx expo install expo-image-picker`
