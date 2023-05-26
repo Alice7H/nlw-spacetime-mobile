@@ -82,3 +82,5 @@ O react native possui o hook `useSafeAreaInsets` que fornece informações de in
 - Buscando memórias da API
 
 Instalamos o expo-image-picker para acessar imagens da galeria ou as fotos da câmera para isso executamos o `npx expo install expo-image-picker`
+
+Usamos a biblioteca 'dayjs' para manipular datas na aplicação, executamos o comando para `npm install dayjs` instalá-lo.
